@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Đăng ký | TechCore PC</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="logo" href="index.html">TechCore<span>PC</span></a>
+  <p class="slogan">Lắp ráp máy tính theo cấu hình của bạn</p>
+</header>
+<nav class="site-nav"><ul><li><a href="index.html" class="">Trang chủ</a></li><li><a href="sanpham.html" class="">Sản phẩm</a></li><li><a href="tintuc.html" class="">Tin tức</a></li><li><a href="gioithieu.html" class="">Giới thiệu</a></li><li><a href="dangky.html" class="active">Đăng ký</a></li></ul></nav>
+
+<main class="container">
+  <h1>Đăng ký tư vấn / đặt hàng</h1>
+  <form action="#" method="post" onsubmit="alert('Đã gửi thông tin. Cảm ơn bạn!'); return false;">
+    <table class="form-table">
+      <tr><th colspan="2">Thông tin khách hàng</th></tr>
+      <tr><td><label for="ten">Họ và tên</label></td><td><input id="ten" name="ten" type="text" required></td></tr>
+      <tr><td><label for="email">Email</label></td><td><input id="email" name="email" type="email" required></td></tr>
+      <tr><td><label for="sdt">Số điện thoại</label></td><td><input id="sdt" name="sdt" type="tel" pattern="[0-9]{10}" title="Nhập 10 chữ số" required></td></tr>
+      <tr><td><label for="cauhinh">Cấu hình quan tâm</label></td>
+          <td><select id="cauhinh" name="cauhinh"><option>PC Gaming</option><option>PC Đồ hoạ</option><option>PC Văn phòng</option><option>Laptop</option></select></td></tr>
+      <tr><td>Hình thức thanh toán</td>
+          <td><label><input type="radio" name="tt" value="cod" checked> Khi nhận hàng</label>
+              <label><input type="radio" name="tt" value="ck"> Chuyển khoản</label></td></tr>
+      <tr><td><label for="ghichu">Ghi chú</label></td><td><textarea id="ghichu" name="ghichu" rows="4"></textarea></td></tr>
+      <tr><td colspan="2" class="actions"><button type="submit" class="btn">Gửi đăng ký</button> <button type="reset" class="btn ghost">Nhập lại</button></td></tr>
+    </table>
+  </form>
+</main>
+<footer class="site-footer">
+  <div>
+    <h3>TechCore PC</h3>
+    <p>Địa chỉ: 19 Nguyễn Hữu Thọ, Quận 7, TP.HCM</p>
+    <p>Hotline: 0900 123 456 &nbsp;|&nbsp; Email: lienhe@techcorepc.vn</p>
+  </div>
+  <div>
+    <h3>Liên kết</h3>
+    <p><a href="sanpham.html">Sản phẩm</a> · <a href="tintuc.html">Tin tức</a> · <a href="dangky.html">Đăng ký</a></p>
+  </div>
+  <p class="copy">© 2026 TechCore PC – Bài tập Thiết kế giao diện Website – 523108125 – Nguyễn Văn Hà</p>
+</footer>
+
+</body>
+</html>
